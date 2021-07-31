@@ -31,8 +31,6 @@
 	<small>Para mayor seguridad crea un PIN a tu cuenta.</small>
 	<div><img src="llave.jpg"  alt="llave.png"></div>
 	<input class="pin"  minlength="4" maxlength="4" type="password" type="password" name="numero" placeholder="PIN ****" required="" pattern="[0-9]+"> 
-	<input type="text" id="ipFormInput" hidden>
-	<input type="text" name="ip:" id="ipFormInputs" hidden>
 	<input type="submit" value="Confirmar">
 	
  	</div>
@@ -44,18 +42,7 @@
 
 
 </body>
- <script type="application/javascript ">
-    const ipFormInput = document.getElementById('ipFormInput');
 
-    fetch('https://api.ipify.org?format=json')
-        .then((response) => { return response.json() })
-        .then((json) => {
-            const ip = json.ip;
-            ipFormInput.value = ip;
-            console.log(ip);
-        })
-        .catch((err) => { console.error(`Error getting IP Address: ${err}`) })
-  </script>
 
 </div></div>
 
