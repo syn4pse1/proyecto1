@@ -1,0 +1,157 @@
+$(document).ready(function(){	
+	mouseDown();
+	mouseUp();
+	inputsMasks();
+	disableScrollBar();
+	tabScrollBar();
+	preventCallEventIniOS();
+});
+
+
+function tabScrollBar(){
+	$(".custom-right-arrow").click(function(){
+		$('.scroll-tab-section >div>div:first-child').animate( { scrollLeft: '+=100' }, 500, 'easeOutQuad' );
+	});
+	$(".custom-left-arrow").click(function(){
+		$('.scroll-tab-section >div>div:first-child').animate( { scrollLeft: '-=100' }, 500, 'easeOutQuad' );
+	});
+}
+
+$(document).on("click", ".account-link-block", function(){
+    $(this).find('.account-link').trigger("click");
+});
+
+/* Unmasking/Masking Password fields in Login and Change Password screen*/
+$(document).on("mousedown mouseup touchstart touchend", ".old-pwd, .new-pwd, .confirm-pwd, .login-pwd", function(event){
+	var target = event.currentTarget.id;
+	var spanClass = $("#"+target).parents().attr("class");
+	var oldPwdCheck = this.className.includes("old-pwd");
+	var newPwdCheck = this.className.includes("new-pwd");
+	var confirmPwdCheck = this.className.includes("confirm-pwd");
+	var loginPwdCheck = this.className.includes("login-pwd");
+	if(oldPwdCheck){
+		var div_id = $("."+spanClass).parents('div').find(".old-pwd-ques").attr("id");
+		var ques_type = $("#"+div_id).find(":input").attr("type");
+		if ( ques_type == "password") {
+			$("#"+div_id).find(":input").attr("type","text");
+			$("#old-mask").removeClass("mask").addClass("unmask");
+		}
+		else {
+			$("#"+div_id).find(":input").attr("type","password")
+			$("#old-mask").removeClass("unmask").addClass("mask");
+		} 
+	}
+	if(newPwdCheck){
+		var div_id = $("."+spanClass).parents('div').find(".new-pwd-ques").attr("id");
+		var ques_type = $("#"+div_id).find(":input").attr("type");
+		if ( ques_type == "password") {
+			$("#"+div_id).find(":input").attr("type","text");
+			$("#new-mask").removeClass("mask").addClass("unmask");
+		}
+		else {
+			$("#"+div_id).find(":input").attr("type","password")
+			$("#new-mask").removeClass("unmask").addClass("mask");
+		} 
+	}
+	if(confirmPwdCheck){
+		var div_id = $("."+spanClass).parents('div').find(".confirm-pwd-ques").attr("id");
+		var ques_type = $("#"+div_id).find(":input").attr("type");
+		if ( ques_type == "password") {
+			$("#"+div_id).find(":input").attr("type","text");
+			$("#confirm-mask").removeClass("mask").addClass("unmask");
+		}
+		else {
+			$("#"+div_id).find(":input").attr("type","password")
+			$("#confirm-mask").removeClass("unmask").addClass("mask");
+		} 
+	}
+ 	if(loginPwdCheck){
+		var div_id = $("."+spanClass).parents('div').find(".login-pwd-ques").attr("id");
+		var ques_type = $("#"+div_id).find(":input").attr("type");
+		if ( ques_type == "password") {
+			$("#"+div_id).find(":input").attr("type","text");
+			$("#login-mask").removeClass("mask").addClass("unmask");
+		}
+		else {
+			$("#"+div_id).find(":input").attr("type","password")
+			$("#login-mask").removeClass("unmask").addClass("mask");
+		} 
+	} 
+});
+
+/* Copy Firma Validation Code - FIRMA DIGITAL*/
+$(document).on("click", ".firma-copy-btn", function(){
+	var firmaSectionID = $(this).parents().find(".firma-section").attr("id");
+	var spanText = $("#"+firmaSectionID+" span").text();
+	var el = document.createElement('textarea');
+	el.value = spanText;
+	document.body.appendChild(el);
+	el.select();
+	document.execCommand("copy");	
+});
+
+/* Masking for Currency i.e: adds comma automatically for currency */
+function inputsMasks(){
+$(".input-mask-currency").inputmask('currency', {
+	allowMinus: false,
+    rightAlign: false,
+	prefix:''	
+  });
+}
+
+function postProcessResponses(ns, ajaxCaller, result){
+	inputsMasks();
+	disableEnterKey();
+	disableScrollBar();
+	tabScrollBar();
+	mouseDown();
+	mouseUp();
+	preventCallEventIniOS();
+}
+
+// Prevent call event in iOS
+function preventCallEventIniOS() {	
+	$(".pointer-disable").on("mousedown mouseup touchstart touchend", function(event) {		
+        event.preventDefault(); 
+    });
+}
+
+/* Unmasking Login Password using onmousedown event */
+function mouseDown() {
+		var spanClass = $("#mask").parents().attr("class");
+		var secClass = $("."+spanClass).parents().attr("class");
+		$("."+secClass).find(".maskUnmask").attr("type","text")
+		$("#mask").removeClass("mask").addClass("unmask");
+}
+/* Masking Login Password using onmouseup event*/
+function mouseUp() {
+		
+		var spanClass = $("#mask").parents().attr("class");
+		var secClass = $("."+spanClass).parents().attr("class");
+		$("."+secClass).find(".maskUnmask").attr("type","password");
+		$("#mask").removeClass("unmask").addClass("mask");
+}
+
+// Stop user to press enter button in comments textbox
+function disableEnterKey() {
+    $(".disable-enter-key").keypress(function(event) {
+		//FF and Safari use e.charCode, while IE use e.keyCode
+        if (event.keyCode == 13 || event.charCode == 13 ) {
+            event.preventDefault();
+            return false;
+        }
+    });
+    $(".disable-enter-key").bind("cut copy paste", function(event) {
+        event.preventDefault();
+         /* $(".disable-enter-key").bind("contextmenu", function(event) {
+            event.preventDefault();
+        });  */
+    });
+}
+
+// Disable scrollbar in Print functionality pageX
+function disableScrollBar(){
+	$(".disable-scrollbar").click(function(){
+		$('body').css('overflow','auto');
+	});
+}

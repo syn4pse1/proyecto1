@@ -1,0 +1,1372 @@
+td[id*='Selector'],th[id*='Selector'] {display:none;}
+td[id*='Responsive_Icon'] a,th[id*='Responsive_Icon'] a {display:none !important;}
+table.dataTable td[id*='Responsive_Icon'],
+table.dataTable th[id*='Responsive_Icon'] {
+	padding-left: 0;
+	padding-right: 0;
+}
+table.dataTable tr td:first-child,
+table.dataTable tr th:first-child {
+	width: 0px;
+}
+table.dataTable th {
+	width: auto !important;
+}
+.tc-right-align {text-align:right;}
+.tc-table-icon a:focus {
+    box-shadow: none;
+    outline: 0;
+}
+.ext-vertical-align-top {
+	vertical-align: top;
+}
+
+.gutter-top label {
+	padding:0 1rem;
+}
+.gutter-right-25 {
+	padding-right:25px;
+}
+.gutter-right-40 {
+	padding-right:40px;
+}
+/* Disable the X on floating modal windows*/
+.ui-dialog-titlebar-close {
+display:none;
+}
+
+.ext-auto-width {
+	width: auto;
+}
+.ext-force-auto-width {
+	width: auto !important;
+}
+.ext-auto-height {
+	height: auto;
+}
+.ext-background-color-orange{
+	background-color:#f39c12;
+	color:#ffffff;
+}
+.ext-max-width-full {
+	max-width: 100%;
+}
+.ext-card-body-max-width-md{
+	max-height: 400px;
+    overflow: auto;
+}
+.ext-max-height-full {
+	max-height: 100%;
+}
+.ext-sticky-accounts-sidebar {
+	height:232px;
+	min-height:232px;
+}
+.ext-image-portrait {
+	border-radius: .3rem;
+}
+
+.ext-advert-image {
+	border-radius: .3rem;
+	width:100%;
+}
+.ext-display-inline {
+	display: inline !important;
+}
+.ext-overlay-xl-button-section {
+	position: relative;
+}
+.ext-force-static-icon-position > span:before {
+	position: static;
+}
+.ext-tc-info-tile {
+	margin-right:0;
+	display:flex;
+}
+.ui-widget-content .ext-custom-red-btn,
+.tc-card .ext-custom-red-btn,
+.ext-custom-red-btn {
+	color: #C0392B;
+}
+.ext-no-checkbox-margin .tc-checkbox {
+	max-width: 2rem;
+	min-width: auto;
+}
+.ext-no-checkbox-margin .tc-checkbox input[type=checkbox]+label {
+	margin-right: 0;
+}
+.ext-no-checkbox-margin fieldset,
+.ext-no-checkbox-margin .tc-postfix-part {
+	vertical-align: middle;
+}
+.ext-no-checkbox-margin .tc-postfix-part {
+	word-break: break-all;
+}
+.ext-no-checkbox-margin fieldset {
+	width: 10%;
+}
+.ext-no-checkbox-margin .tc-postfix-part {
+	width: 78%;
+}
+/* .ui-widget-content a.tc-corporate-color {
+	color: #dd5f13;
+} */
+
+.ext-custom-Link-Button {
+    background: none;
+    border: none;
+    display: inline-block;
+	color: #dd5f13;
+	width: auto;
+	font-size: 1rem;
+	cursor: pointer;
+	font-family: "TC-regular";
+	
+}
+.ext-custom-Link-Button:hover {
+	color: #0c4374;
+}
+.ext-inline-block {
+	display: inline-block;
+}
+
+.ext-tc-badge-header {
+	border-radius: 3px;
+    position: absolute;
+    display: block;
+    top: -30px;
+    line-height: 10px;
+    padding: 3px 4px;
+    right: -7px;
+    font-size: 11px;
+	background: #23c162;
+    color: white;
+}
+
+.ext-tc-bullet {
+	position: relative;
+    display: block;
+    top: 0px;
+    line-height: 10px;
+    padding: 3px 4px;
+    right: -5px;
+    font-size: 11px;
+    background: #dd5f13;
+    width: 10px;
+    height: 10px;
+    border-radius: 180px;
+    color: white;
+}
+
+.ext-picture-frame {
+	border-radius: 180px;
+	border: 1px solid #ddd;
+	padding: 2px;
+	max-height: 60px;
+}
+
+.ext-card-spacing-1 {
+	height: 1rem;
+}
+
+/* START - Used for showing unread messages within Messages Business Module */
+.ext-tc-bold {
+	font-weight:bold;
+}
+/* END */ 
+
+.ext-overlay-xl-button {
+	position: absolute;
+	top: 2.3rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+.ext-overlay-xl-button>span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%); 
+	color: #ffffff;
+	background-color: #dd5f13;
+	border-radius: 50%;
+	padding: 2rem;
+}
+.ext-overlay-xl-button>span:before {
+	color: inherit;
+	font-size: 34px;
+}
+
+.ext-no-top-padding {
+	padding-top: 0 !important;
+}
+
+.ext-no-bottom-padding {
+	padding-bottom: 0 !important;
+}
+.ext-no-left-padding {
+	padding-left: 0 !important;
+}
+
+.ext-no-right-padding  {
+	padding-right: 0 !important;
+}
+
+.ext-auto-min-width {
+	min-width: auto !important;
+}
+.ext-auto-min-height {
+	min-height: auto !important;
+}
+.ext-padding-top-12 {
+	padding-top: 12px;
+}
+.ext-padding-bottom-5 {
+	padding-bottom: 5px;
+}
+.ext-center-align-block {
+	margin: 0 auto;
+}
+.ext-no-word-break {
+	word-break: normal !important;
+}
+
+.ext-card-color {
+    color: #dd5f13;
+}
+.ext-pie-chart-section {
+	text-align: center;
+}
+.ext-pie-chart-section>div  {
+	display: inline-block;
+}
+
+.ext-form-control-disabled-text {
+	background-color: #f5f5f5  !important;
+    border: 1px solid #f5f5f5 !important;
+    color: #666666;
+    opacity: 1;
+}
+
+.ext-oversized-icon {
+	height: auto !important;
+}
+.ext-border-right {
+	border-right: 1px solid #dddddd;
+}
+
+
+span.tc-prefix-part+span.tc-form-control {
+	display: inline-block;
+	width: auto !important;
+}	
+
+.ext-confirmation-color {
+	color: #23c162;
+}
+
+.ext-warning-color {
+	color: #efa26f;
+}
+.ext-future-bar-color {
+	color: #6088AD;
+}
+.ext-future-background-bar-color {
+	background: #A1C0DB;
+}
+.ext-error-color {
+	color: #ef5350;
+}
+.liablity span {
+	padding-left:0;
+}
+.ext-confirmation-box {
+	margin-top: 2.85rem;
+}
+.ext-confirmation-box-text-amount {
+	font-size: 1.4rem;
+}
+.ext-confirmation-box-text-amount  > div {
+	text-align: left;
+	display: inline-block;
+}
+.ext-confirmation-box-text-color {
+	color: #FFFFFF;
+}
+
+span.ext-form-control {
+    padding-top: 5px;
+	word-break: break-all;
+}
+span.ext-break-word {
+	word-break: break-word;
+}
+.ext-answer-part-detail-section span.ext-form-control {
+	padding-top: 0; 	
+}
+.ext-card-expander-bar-top-border{
+	background:none;
+	border-top:1px solid #dddddd;
+}
+
+.ext-answer-left .hasDatepicker {
+	margin-right: 0;
+}
+.ext-answer-left .ui-datepicker-trigger {
+	margin-left: -2rem;
+}	
+
+.ui-widget-content .tc-button-color {
+	color: #ffffff;
+}
+
+.ext-full-width-button-section input {
+	display: block;
+	border-radius: .3rem;
+}
+.ext-hidden-responsive-btn {
+	display: none;
+}
+.ext-reverse-align-heading > div {
+	text-align: right;
+}
+/* TABLES */
+.ext-non-sortable .DataTables_sort_icon {
+	display: none;
+	
+}
+.ext-non-sortable .DataTables_sort_wrapper {
+	cursor: default;
+}
+
+.ext-left-sort-icon .DataTables_sort_icon {
+	float: none !important;
+    display: inline-block;
+    vertical-align: middle;
+	position: static;
+}
+.ext-left-sort-icon .DataTables_sort_wrapper span {
+		display: inline-block;
+}
+.dataTables_paginate a.fg-button {
+	font-weight: normal;
+}
+.dataTables_info,
+.dataTables_paginate {
+	float: none;
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	
+}
+.fg-toolbar {
+	text-align: right;
+}
+.dataTables_info {
+	max-width: 24.5%;
+	padding: 15px 10px 10px 0px;
+}
+.dataTables_paginate {
+	max-width: 75%;
+	padding: 15px 0px 10px 10px;
+}
+/* table tr {
+	cursor: default !important;
+} */
+
+/* .dataTable tr th:first-child,
+.dataTable tr td:first-child {
+	display: none;
+	padding-left: 20px !important;
+} */
+/* .ext-responsive-sort-table tr th:first-child, 
+.ext-responsive-sort-table tr td:first-child {
+	display: table-cell;
+} */
+
+/* Responsive Tables - fix for pagination - default jquery plugin behaviur puts fixed height on pagination, causing vertical scrollbar */
+div.paging_full_numbers {
+	height: auto;
+}
+
+
+.ext-responsive-sort-table tr.group > td:first-child:before {
+	display: none !important;
+}
+.tc-plain-table th,
+.ext-custom-table-heading-hx h4,
+.dataTable th a {
+	color: #dd5f13;
+	opacity: 1;
+}
+.dataTable th a:hover {
+	color: #dd5f13;
+	opacity: 1;
+}
+.ext-custom-table-heading-hx h4 {
+	font-family: "TC-light";
+    font-weight: bold;
+}
+.tc-plain-table .tc-form-control {
+	margin-right: 0;
+}
+table.dataTable thead th.sorting_disabled {
+	cursor: default;
+}
+table .ext-non-sortable th.sorting_disabled a,
+table .ext-non-sortable th.sorting_disabled .DataTables_sort_wrapper {
+	cursor: text;
+}
+/* .tc-table td:first-child {
+	padding-left: 0;
+} */
+.ext-search-visible {
+	display: block;
+}
+.ext-search-hidden {
+	display: none;
+}
+.ext-no-first-cell-padding td:first-child {
+	padding-left: 0;
+}
+.tc-card-expander .ext-more-less-btn {
+	text-transform: uppercase;
+}
+
+.tc-detail-section .ext-row-part {
+	display: block;
+}
+.ext-answer-part-detail-section .tc-prefix-part {
+	padding-left: 0.5rem;
+	padding-right: 0;
+}
+.ext-confirmation-box {
+	height: 7.36rem;
+	position: relative;
+	padding-right: 1.8rem;
+	padding: 17px 0;
+}
+.ext-confirmation-box .tc-row-part {
+	display: block;
+}
+.ext-confirmation-box-text-small-center {
+	margin-top: -0.7rem;
+	
+}
+.ext-confirmation-box-text-small-center,
+.ext-confirmation-box-text-amount {
+	padding-left: 0;
+	padding-right: 0;
+	display: block;
+}
+.ext-confirmation-box-text-amount .tc-prefix-part {
+	padding-right: 5px;
+	float: none;
+}
+.ext-confirmation-box-text-amount .tc-default-input {
+	float: none;
+	padding: 0;
+	width: auto;
+}
+.ext-confirmation-box-text-small-center span.tc-form-control {
+	background-color: transparent !important;
+	border: none !important;
+	width: 100% !important;
+	color: #FFFFFF;
+	padding: 0;
+	font-size: 0.85rem;
+	display: block;
+	max-height: 2.29rem;
+	overflow: hidden;
+	min-width: 1px;
+	display: block;
+}
+
+.ext-confirmation-box:after {
+    content: "";
+    display: block;
+    height: 7.36rem;
+    width: 1.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: inherit;
+    border-left: 1.8rem solid transparent;
+    border-top: 3.6rem solid white;
+    border-bottom: 3.6rem solid white;
+}
+
+/* POPUP default overrides */
+
+.ui-dialog {
+	position: fixed !important;
+	top: 10px !important;
+	max-height: 97%;
+	max-width: 95%;
+	overflow-y: auto !important;
+}
+.ui-dialog .tc-answer-part span.tc-form-control {
+	min-height: auto;
+	padding: 0;
+}
+.ui-resizable-handle {
+    display: none !important;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: default;
+}
+
+.ext-tc-select-padding{
+	 min-width: 14.3rem;
+}
+
+.ext-padding-left{
+	padding-left:1rem;
+}
+
+.ext-background-transparent .ui-corner-bl.fg-toolbar{
+	padding:0 !important; 
+		
+	
+}
+.ext-background-transparent .ui-corner-bl.fg-toolbar .dataTables_paginate{ 
+	max-width: 100%;
+		
+	
+}
+
+.ext-background-transparent .ui-corner-bl.fg-toolbar .fg-button{
+	height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.3rem;
+}
+
+.ext-terms_condition{
+	height: 3.5rem;
+    line-height: 3rem;
+}
+div.tc-checkbox.ext-checkbox-terms{
+	width: 2rem;
+    min-width: 2rem;
+    height: 3rem;
+    line-height: 1rem;
+}
+.ext-margin-left-paym.responsive-row{
+	margin-left: 27px;
+}
+
+.ext-margin-left-paym h3{
+	margin-left: 7px;
+}
+.ext-top-alignment.dataTable>tbody>tr.child span.dtr-title{
+	vertical-align: top;
+    margin-top: 15px;
+}
+
+.ext-icon-text{
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	padding-top:0;
+	margin-left: -10px;
+	}
+	
+.ext-button-right-xs-left{
+	padding-top: 9px;
+}
+
+.ext-align-table-cell{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/* XS & SM Breakpoint - Be carefull if you want to change behaviour for just one breakpoint this is not the place to do it! */
+@media screen and (max-width: 767px) {
+	.ext-oversized-text .tc-form-control,
+	.ext-oversized-prefix	{
+		font-size: 1.7rem;
+	}
+	.ext-row-part {
+		display: block;
+	}
+	.ext-question-part, .ext-alt-question-part {
+		padding-bottom: .5rem;
+		padding-top: .5rem;
+	}
+	.ext-answer-part-detail-section fieldset > div {
+		vertical-align: top;
+	}	
+	.ext-padding-left{
+		padding-left:0;
+	}
+	
+	.ext-button-right-xs-left{
+	text-align:left;
+}
+
+}
+/* MD & LG & XL Breakpoint - Be carefull if you want to change behaviour for just one breakpoint this is not the place to do it! */
+@media screen and (min-width: 768px) {
+	.ext-custom-cursor .ext-left-sort-icon tbody tr{
+		  pointer-events: none;
+	}
+	
+}
+
+
+/*THEME OVERIDE FOR HEADING TITLES AND SHOW OPTIONS ICON IN ACCOUNTS, LOANS, DEPOSITS*/
+
+.ext-transactionTitleAccountsLoansDeposits{
+	border-bottom: 0;
+}
+
+.ext-transactionTitleAccountsLoansDeposits h2 {
+	padding-top: 0 !important;
+}
+
+.ext-transactionTitleAccountsLoansDeposits > div > div > div > div > div > div > a > span:before {
+	top:-10px;
+}
+.ext-transactionTitleAccountsLoansDeposits > div > div {
+	min-height: 2.5rem;
+	top:0;
+}
+
+/*END - OVERIDE FOR HEADING TITLES AND SHOW OPTIONS ICON IN ACCOUNTS, LOANS, DEPOSITS*/
+
+/* DATA TABLES OVERRIDE */
+
+/* Adjust/remove this if it breakes */
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+	top: 40%;
+}
+@media (max-width: 1280px) {
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 33%!important;
+    }
+}
+@media (max-width: 767px) {
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 40%!important;
+    }
+}
+@media (max-width: 530px) {
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, 
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+        top: 33%!important;
+    }
+    div table.dataTable.dtr-inline.collapsed td:first-child, 
+    div table.dataTable.dtr-inline.collapsed th:first-child {
+        padding-left: 25px;
+    }
+}
+table.dataTable.dtr-inline .group td {
+		padding-left: 1.1rem;
+}
+
+.dtr-details {
+	pointer-events:none;
+}
+
+.ext-background-transparent .fg-toolbar{
+	background:transparent;
+}
+
+.ext-background-transparent .ui-corner-tl.fg-toolbar{
+	display:none;
+}
+.ext-tc-icon-bckgrd-white{
+    background: #fff;
+    border-radius: 50%;
+	margin-right: 5px;
+	margin-bottom:10px;
+}
+.ext-tc-icon-bckgrd-white.ext-tc-icon-bckgrd-white{
+	min-width: 40px;
+    min-height: 40px;
+}
+.ext-background-transparent .tc-card-header-icon{
+	display:inline;
+}
+.ext-messages-table-question .tc-prefix-part,
+.ext-messages-table-question .tc-form-control {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.ext-messages-table-question .tc-prefix-part {
+	max-width: 6%;
+	padding: 0.93rem 0 0.93rem 0;
+	min-height: 2.37rem;
+}
+.ext-messages-table-question .tc-prefix-part .ext-tc-bullet {
+	
+}
+.ext-messages-table-question .tc-form-control {
+	max-width: 90%;
+	word-break: break-all;
+}
+.ext-tc-bullet {
+	right: 0;
+}
+
+/* XS Breakpoint */
+@media (max-width:567px)  {
+	.gutter-right-40 {
+		padding-right: 18px;
+	}
+	.gutter-right-25 {
+		padding-right: 0px;
+	}
+	.tc-card-header div.tc-popup {
+		right: -2rem !important;
+	}
+	.ext-half-answer-full-xs {
+		width: 100% !important;
+	}
+	.ext-col-full-xs {
+		width: 100% !important; 
+	}
+	.col-full-xs.ext-answer-part-detail-section .tc-prefix-part {
+        padding: 0 0 .5rem;
+    }
+	.col-full-xs.tc-answer-part span.ext-form-control {
+        padding: .5rem .5rem 0 .5rem;
+    
+    }
+	.col-full-xs.ext-answer-part-detail-section span.ext-form-control {
+		padding: .5rem .5rem 0 0;
+	}
+	.ext-confirmation-box-text-amount {
+		font-size: 1.5rem;
+	}
+	.ext-confirmation-box:after  {
+		display: none;
+	}
+	.ext-confirmation-box  {
+		padding-right: 0;
+	}
+	.ext-confirmation-box-text-amount,
+	.ext-confirmation-box-text-small-center {
+		text-align: center !important;
+	}
+	
+	.ext-fs-small {
+		font-size: 14px;
+	}
+	.ext-fs-12-sm {
+		font-size: 12px; 
+	}
+	.ext-fs-13-sm {
+		font-size: 13px; 
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 23px;
+	}
+	
+	/* Mobile - Retail Mobile styling for XS breakpoint */
+	
+	
+	
+	/* Below class is used to fix the side menu height to be full screen*/
+	html:not(.tc-box-on) .tc-nav-col.tc-overlay-nav-xs { 
+		height: 100%;  
+		border-bottom:none;
+	}
+	/*fix for the 3 tabs to be on the same line - transaction list*/
+	.tc-tab-header {
+		min-width: 90px;
+	}
+	/*fix for 3 dots icon - transaction list*/
+	.tc-card-toolbar .tc-card-header-icon {
+		min-height: auto; 
+	}
+	
+	.ext-form-control.tc-half-answer-width.col-full-xs.tc-radio.tc-radio-horiz{
+		display: block;
+	}
+
+	/* ACCOUNTS, DEPOSITS, SAVINGS, LOANS - Alignment fix for text in the right column next to the account ICON*/
+	.ext-border-right {
+		border-right: none;
+	}
+
+
+	.tc-prefix-part, .tc-postfix-part{
+
+		padding-right: 0;
+	}
+
+	
+	
+	.col-full-xs.tc-answer-part span.tc-form-control{
+		padding: 0;
+	}
+
+	.tc-card-title{
+		padding-left: 5px;
+	}
+
+	.tc-fs-p2{
+		padding-left: 0;
+	}
+
+	.tc-half-answer-width{
+		padding-left: 5px;
+	}
+
+	/*FIX FOR SHOW OPTIONS ICON POSITION IN ACCOUNTS, LOANS, DEPOSITS*/
+
+	.ext-transactionTitleAccountsLoansDeposits > div > div > div > div > div > div > a > span:before {
+		top:0;
+	}
+
+	/*TRANSFERS ALIGNMENT FIXES*/
+
+	.tc-info-tile{
+		margin-bottom: 0;
+	}
+
+
+	span.tc-select-padding{
+		min-width: 100%;
+	}
+
+	.ext-confirmation-box{
+		margin-top: 0.90rem;
+	}
+	.tc-half-answer-width{
+		min-width: 2rem;
+	}
+
+	.ext-confirmation-box-text-amount {
+		padding-top: 0;
+	}
+	.ext-col-full-xs {width:100%;}
+	.dataTable tr th:first-child,
+	.dataTable tr td:first-child {
+		display: table-cell;	
+	}
+	div.ext-tc-nav-col {
+		pointer-events: none !important;
+	}
+	.ext-tc-accordion-menu > ul > li > a > span{
+		z-index: 6000 !important;
+		pointer-events: all !important;
+	} 
+	div.dataTables_info,
+	div.dataTables_paginate {
+		float: none;
+		padding: 10px 0;
+		text-align: center;
+		margin-right: 0;
+	}
+	.ext-no-left-right-padding-sm {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.ext-auto-min-height-sm {
+		min-height: auto !important;
+	}
+	table.dataTable.dtr-inline.collapsed td:first-child, 
+	table.dataTable.dtr-inline.collapsed th:first-child{
+		padding-left: 18px; 
+	}
+	table.dataTable.dtr-inline.collapsed .group td {
+		padding-left: .5rem;
+	}
+	.ext-vert-align-col{
+		padding-left: 20px;
+	}
+	.fg-toolbar {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.dataTables_info {
+		max-width: 100%;
+		padding: 15px 10px 10px 0px;
+	}
+	.dataTables_paginate {
+		max-width: 100%;
+		padding: 15px 0px 10px 10px;
+	}
+	
+	/* TABLES PAGINATION */
+	.dataTables_wrapper .ui-toolbar .dataTables_paginate span .fg-button.ui-button.ui-state-default.ui-state-disabled {
+		
+	}
+	.dataTables_wrapper .ui-toolbar .dataTables_paginate .fg-button {
+		height: 2.5rem;
+		width: 2.5rem;
+		line-height: 2.3rem;
+	}
+	/* POPUP OVERIDES */ 
+	.ui-dialog {
+		width: 95% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	.tc-prefix-part.ext-tc-prefix-part-padding-right{
+		padding-right:.5em;
+	}
+	a.ext-2-in-1-table-button {
+		background: none;
+		padding: 0 0 0 2.5rem;
+		transition: color .5s;
+		margin: 0;
+	}
+	a.ext-2-in-1-table-button span {
+		font-size: 0;
+		color: transparent;
+		top: 3px;
+		position: relative;
+		min-width: 2rem;
+		height: 42px;
+		line-height: 44px;
+	}
+	.ext-2-in-1-table-button span:before {
+		color: #777777;
+		font-size: 1.5rem;
+		text-align: right;
+		padding: 0;
+	}
+	.ext-2-in-1-table-button span:hover:before {
+		color: #333333;
+	}
+	.tc-half-answer-width {
+		max-width: 100%;
+	}
+	.ext-break-word-sm {
+		word-break: break-all;
+	}
+}
+/* SM Breakpoint */
+
+@media (min-width:568px) and (max-width:767px)  {
+	.ext-col-full-sm {
+		width: 100% !important; 
+	}
+	.col-full-xs.tc-answer-part span.ext-form-control {
+        padding: .5rem .5rem 0 .5rem;
+    }
+	.col-full-xs.ext-answer-part-detail-section span.ext-form-control {
+		padding: .5rem .5rem 0 0;
+	}
+	.col-full-xs.ext-answer-part-detail-section .tc-prefix-part {
+        padding: .5rem 0;
+    }
+	.ext-fs-small {
+		font-size: 14px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 23px;
+	}
+	.ext-border-right {
+		border-right: none;
+	}
+	.dataTable tr th:first-child,
+	.dataTable tr td:first-child {
+		display: table-cell;	
+	}
+	div.ext-tc-nav-col {
+		pointer-events: none !important;
+	}
+	.ext-tc-accordion-menu > ul > li > a > span{
+		z-index: 6000 !important;
+		pointer-events: all !important;
+	}
+	div.dataTables_info,
+	div.dataTables_paginate {
+		float: none;
+		padding: 10px 0;
+		text-align: center;
+	}
+	.ext-vert-align-col{
+		padding-left: 20px;
+	}
+	.ui-dialog {
+		width: 80% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	a.ext-2-in-1-table-button {
+		background: none;
+		padding: 0 0 0 2.5rem;
+		transition: color .5s;
+		margin: 0;
+	}
+	a.ext-2-in-1-table-button span {
+		font-size: 0;
+		color: transparent;
+		top: 3px;
+		position: relative;
+		min-width: 2rem;
+		height: 42px;
+		line-height: 44px;
+	}
+	.ext-2-in-1-table-button span:before {
+		color: #777777;
+		font-size: 1.5rem;
+		text-align: right;
+		padding: 0;
+	}
+	.ext-2-in-1-table-button span:hover:before {
+		color: #333333;
+	}
+}
+
+/* MD Breakpoint */
+
+@media (min-width:768px) and (max-width:1023px)  {
+	.ext-col-full-md {
+		width: 100% !important; 
+	}
+	.ext-fs-small {
+		font-size: 13px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 22px;
+	}
+	.ui-dialog {
+		width: 70% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	.ext-2-in-1-table-button span:before {
+		display: none;
+	}
+}
+
+/* LG Breakpoint */
+
+@media (min-width:1024px) and (max-width:1279px)  {
+	.ext-col-full-lg {
+		width: 100% !important; 
+	}
+	.ext-col-6-12-lg {
+		width: 50% !important;
+	}
+	
+	.ext-fs-small {
+		font-size: 13px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix	{
+		font-size: 22px;
+	}
+	.ui-dialog {
+		width: 60% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+
+		/*Accounts table left*/
+	.ext-left-sidebar .fg-toolbar {
+		text-align: center;
+		padding:0!important;
+	}
+	.ext-left-sidebar .dataTables_paginate {
+		max-width: 100%;
+	}
+
+	.ext-left-sidebar .dataTables_wrapper .ui-toolbar .dataTables_paginate .fg-button {
+		height: 2.5rem;
+		width: 2.5rem;
+		line-height: 2.3rem;
+	}
+	.ext-2-in-1-table-button span:before {
+		display: none;
+	}
+}
+
+/* XL Breakpoint */
+
+@media (min-width:1280px) {
+	.ext-col-full-xl {
+		width: 100% !important; 
+	}
+	.ext-col-6-12-xl {
+		width: 50% !important;
+	}
+	.ext-fs-small {
+		font-size: 12px;
+	}
+	.ext-fs-oversized,
+	.ext-oversized-prefix {
+		font-size: 21px;
+	}
+	.ext-oversized-icon span:before {
+		font-size: 55px;
+	}
+	.ext-vert-align-col{
+		padding: 104px 20px;
+
+	}
+	.ui-dialog {
+		width: 40% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	/*Accounts table left*/
+	.ext-left-sidebar .fg-toolbar {
+		text-align: center;
+	}
+	.ext-left-sidebar .dataTables_paginate {
+		max-width: 100%;
+	}
+
+	.ext-left-sidebar .dataTables_wrapper .ui-toolbar .dataTables_paginate .fg-button {
+		height: 2.5rem;
+		width: 2.5rem;
+		line-height: 2.3rem;
+	}
+	.ext-2-in-1-table-button span:before {
+		display: none;
+	}
+}
+
+
+/* THEME Overrides */
+
+.tc-error-color select option {
+	color: #bd0008;
+}
+
+.tc-footer-container .tc-uppercase {
+	text-transform: none;
+}
+
+.tc-radio input[type=radio]+label:before{
+	color:#cccccc;
+}
+
+div.tc-error-row div.tc-radio label:before {
+	color: #C0392B !important;
+}
+div.tc-error-row div.tc-radio label {
+	color: #666666 !important;
+}
+
+
+/* This is needed to prevent the "ALT" text of the images to not break and display on a single row. In some cases the text is not entirely displayed when the image is not loaded. */
+
+.ext-picture-frame {
+	white-space: normal;
+	font-size: 13px;
+}
+
+
+
+
+
+
+/* jQuery UI pop-up overrides for Android & iOS */
+
+.ui-dialog .ui-dialog-titlebar button.ui-dialog-titlebar-close {
+	margin: -10px 0 0 0;
+}
+.ui-dialog .ui-dialog-titlebar button.ui-dialog-titlebar-close span.ui-icon {
+	position: static;
+	
+}
+.ui-dialog .ui-dialog-title {
+	white-space: normal;
+	margin-right: 0;
+	width: 100%;
+}
+.ui-dialog .ui-dialog-titlebar + .ui-widget-content {
+	height: auto !important;
+}
+.ui-dialog .ui-dialog-titlebar + .ui-widget-content .tc-button-container {
+	left: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.ext-tc-header-icon-before{
+	align-items: flex-start !important;
+}
+
+.ext-tc-header-icon-before>span::before{
+	position: relative;
+	top: 0;
+}
+
+div.tc-radio.tc-error-color-border input[type=radio]:focus+label:before,
+div.tc-radio.tc-error-color-border input[type=radio]+label:hover:before{box-shadow:0 1px 6px #C0392B;}
+
+.tc-radio input[type=radio]:focus+label:before{
+	box-shadow: 0 0 0 1px !important;
+}
+
+.ext-tc-radio-input input[type=radio]:focus+label:before{
+	box-shadow: 0 1px 6px #999999 !important;
+}
+.ext-tc-row-select{
+	background-color: #dd5f13 !important;
+	color: #ffffff !important;
+}
+.ext-tc-row-select .tc-icon{
+	color: #ffffff !important;
+	box-shadow: none !important;
+}
+.ext-cursor-default{
+    cursor: default !important;
+}
+.ui-accordion .ui-accordion-header a {
+	padding: 10px 0 10px 0;
+}
+.ext-word-break{
+	word-break: break-word;
+}
+
+.ext-show-more div{
+	vertical-align: top !important;
+}
+
+
+
+/* SESSION TIMEOUT POPUP */
+
+.session-timeout-container {
+	top: 50% !important;
+    transform: translateY(-50%);
+	font-family: "TC-regular" !important;
+}
+.session-timeout-container .ui-dialog-titlebar span {
+	font-size: 14px;
+	
+}
+.session-timeout-container .ui-dialog-titlebar {
+	padding: 10px !important;
+}
+.session-timeout-container .ui-dialog-titlebar span {
+    font-size: 14px;
+}
+.session-timeout-container .ui-dialog-content {
+	margin: 10px !important;
+    overflow: hidden; 
+}
+
+/*Forecast Bubble Landing page*/
+.ext-grey-bubble {
+	text-align:center;
+	background:#f5f5f5;
+	border-radius:20px;
+	padding: 8px 0 0 0;
+	cursor:pointer;
+	margin-bottom: 5px;
+}
+
+.ext-grey-bubble:hover {
+	background:#eaf5f7;
+}
+
+.ext-grey-bubble-big-text{
+	font-size:20px;
+	font-family:TC-light;
+}
+
+/*fix for core tab margin */
+.tc-tab-pane {
+	    margin: 0 -1rem;
+}
+
+/* fix for table overflow in 6.1.1. Might impact functionality. Check*/
+.tc-table-wrapper {
+    overflow: hidden;
+}
+
+/*background transparent accordion table*/
+.tc-card div.tc-accordion .tc-accordion-pane {
+	background: transparent;	
+}
+
+/*white background popup */
+.tc-ui-dialog.ui-dialog{
+	background: #fff;		
+} 
+
+.ext-heading3-icon>span::before{
+	font-size:12px;
+}
+
+/*Styling of Language flags*/
+
+.ext-header-flag-icon {
+    display: block;
+    height: 60px;
+    margin-right: 1px;
+    opacity: .9;
+    font-size: 0;
+    padding: 14px 5px 14px 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.ext-header-flag-icon:hover,.ext-header-flag-icon:active,.ext-header-flag-icon:focus, .ext-header-flag-icon-active {
+    background-color: #387dba;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    font-weight: normal;
+    color: #3C3C3C;
+}
+
+.ext-visibility {
+	visibility: initial !important;
+}
+
+div .ext-count-bubble-small {
+    background-color: #0c4374;
+    padding: 3px;
+    min-width: 19px;
+    height: 19px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    display: inline-block;
+    color: #fff;
+}
+
+.ext-padding-left-10{
+	padding-left:10px;
+}
+/*icons customer profile*/
+.tc-small .ext-tc-table-icon-profile .tc-table-icon{
+    line-height: 37px;
+}
+
+.tc-med .ext-tc-table-icon-profile .tc-table-icon{
+	line-height: 40px;
+}
+
+
+.tc-big .ext-tc-table-icon-profile .tc-table-icon{
+	line-height: 46px;
+}
+/*end icons customer profile*/
+
+/*align at the edge the text and sign*/
+.ext-info-tile-edge-align .tc-info-tile div:first-child{
+	display:block;
+}
+/*end align at the edge the text and sign*/
+
+.tc-expanding-section.tc-ex-sec-show { overflow:inherit;}
